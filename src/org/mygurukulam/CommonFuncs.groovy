@@ -1,4 +1,5 @@
-package org.mygurukulam;
+package org.mygurukulam
+
 class CommonFuncs {
     def sayHi() {
         echo "Hi from CommonFuncs!"
