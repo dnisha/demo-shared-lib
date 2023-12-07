@@ -6,7 +6,7 @@ def call(Map config = [:]) {
     return hiMessage
 }
 
-def testHello(Sting name) {
+def testHello(def name) {
     def commonFuncs = new org.mygurukulam.CommonFuncs()
     def helloMessage = commonFuncs.sayHello(name)
     return helloMessage
