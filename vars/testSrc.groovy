@@ -1,4 +1,5 @@
 def call() {
-    def tst = new org.mygurukulam.CommonFuncs()
-    return tst.sayHi()
+    def commonFuncs = new org.mygurukulam.CommonFuncs()
+    echo commonFuncs.sayHi()
+    echo commonFuncs.sayHello("World")
 }
