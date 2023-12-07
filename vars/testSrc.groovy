@@ -1,7 +1,11 @@
 def call() {
     def commonFuncs = new org.mygurukulam.CommonFuncs()
     def hiMessage = commonFuncs.sayHi()
-    echo hiMessage
-    def sayHello = commonFuncs.sayHello("World")
-    echo sayHello
+    return hiMessage
+}
+
+def testHello() {
+    def commonFuncs = new org.mygurukulam.CommonFuncs()
+    def helloMessage = commonFuncs.sayHello("World")
+    return helloMessage
 }
