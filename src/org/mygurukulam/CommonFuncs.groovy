@@ -2,10 +2,10 @@ package org.mygurukulam
 
 class CommonFuncs {
     def sayHi() {
-        echo "Hi from CommonFuncs!"
+        return "Hi from CommonFuncs!"
     }
 
     def sayHello(str) {
-        echo "Hello ${str}"
+        return "Hello ${str}"
     }
 }
