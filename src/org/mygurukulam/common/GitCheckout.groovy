@@ -1,11 +1,7 @@
 package org.mygurukulam.common
 
 class GitCheckout {
-
-    def checkout(Map config = [:]) {
-
-    echo "Cloning repo - ${config.url} from branch - ${config.branch} using creds - ${config.creds}"
-    git branch: "${config.branch}", credentialsId: "${config.creds}", url: "${config.url}"
-    
+    def checkout(str1, str2, str3) {
+        echo "Cloning repo - ${str1} ${str2} ${str3}"
     }
 }
