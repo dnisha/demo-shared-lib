@@ -9,3 +9,6 @@ def testHello() {
     def helloMessage = commonFuncs.sayHello("World")
     return helloMessage
 }
+
+def helloMessage = testHello()
+println helloMessage
