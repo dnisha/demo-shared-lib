@@ -1,15 +1,15 @@
 package org.mygurukulam
 
-import org.mygurukulam.common.GitCheckout
+import org.mygurukulam.Clone
 
 
 static def runTerraformPipeline() {
-    def gitCheckout = new GitCheckout()
     node {
         stage('Checkout') {
             steps {
                 script {
-                    gitCheckout.checkout("demo-url", "main", "my-cred")
+                    def z = new org.mygurukulam.Clone()
+                    z.checkOutFrom("deepak")
                 }
             }
         }
