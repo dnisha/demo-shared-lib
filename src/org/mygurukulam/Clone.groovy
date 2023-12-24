@@ -1,6 +1,6 @@
 package org.mygurukulam
 
-def checkOutFrom(repo) {
+def checkOutFrom() {
   git url: "https://github.com/swapnilbamble1438/VotingApp.git"
 }
 
