@@ -11,8 +11,7 @@ class TerraformPipeline {
                 stage('Checkout') {
                     steps {
                         script {
-                            def z = new GitCheckout()
-                            z.checkout()
+                            GitCheckout.checkout()
                         }
                     }
                 }
