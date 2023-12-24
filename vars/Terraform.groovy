@@ -1,4 +1,4 @@
-def call(String appName) {
+def call(String url) {
     pipeline {
         tools {
             maven "MAVEN3"
@@ -11,7 +11,7 @@ def call(String appName) {
                     script {
                         echo 'Hello world'
                         def z = new org.mygurukulam.Clone()
-                        z.checkOutFrom()
+                        z.checkOutFrom(url)
                     }
                 }
             }
