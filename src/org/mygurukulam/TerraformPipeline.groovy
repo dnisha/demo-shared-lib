@@ -1,5 +1,7 @@
 package org.mygurukulam
 
+import org.mygurukulam.common.GitCheckout
+
 class TerraformPipeline {
     static def runTerraformPipeline() {
         pipeline {
@@ -9,7 +11,7 @@ class TerraformPipeline {
                 stage('Checkout') {
                     steps {
                         script {
-                            org.mygurukulam.common.GitCheckout()
+                            GitCheckout.checkout()
                         }
                     }
                 }
