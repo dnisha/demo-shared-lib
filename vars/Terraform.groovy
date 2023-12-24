@@ -11,7 +11,7 @@ def call(String appName) {
                     script {
                         echo 'Hello world'
                         def z = new org.mygurukulam.Clone()
-                        z.checkOutFrom(appName)
+                        z.checkOutFrom()
                     }
                 }
             }
