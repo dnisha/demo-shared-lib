@@ -1,7 +1,7 @@
 package org.mygurukulam
 
 def compile(dir) {
-  sh "cd ${dir} && mvn clean package"
+  sh "cd VotingApp/ && mvn clean package"
 }
 
 return this
