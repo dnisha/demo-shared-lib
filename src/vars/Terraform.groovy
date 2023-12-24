@@ -1,4 +1,4 @@
-package org.mygurukulam
+package org
 
 class TerraformPipeline {
     def gitCheckout = new GitCheckout()
