@@ -8,7 +8,9 @@ class TerraformPipeline {
             stages {
                 stage('Checkout') {
                     steps {
-                      org.mygurukulam.common.GitCheckout("mybranch", "ot-cred", "demo-url")
+                        script {
+                            org.mygurukulam.common.GitCheckout("mybranch", "ot-cred", "demo-url")
+                        }
                     }
                 }
 
