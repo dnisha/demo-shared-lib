@@ -3,7 +3,7 @@ package org.mygurukulam
 import org.mygurukulam.common.GitCheckout
 
 
-def runTerraformPipeline() {
+static def runTerraformPipeline() {
     def gitCheckout = new GitCheckout()
     node {
         stage('Checkout') {
