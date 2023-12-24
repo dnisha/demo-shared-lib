@@ -1,16 +1,19 @@
-def call() {
-    // Your pipeline code here
-    pipeline {
-        agent any
+package org.mygurukulam
 
-        stages {
+class TerraformPipeline {
+    def gitCheckout = new GitCheckout()
+
+    def runTerraformPipeline() {
+        node {
             stage('Checkout') {
                 steps {
                     script {
-                        org.mygurukulam.common.GitCheckout.checkout()
+                        gitCheckout.checkOutFrom("https://github.com/swapnilbamble1438/VotingApp.git")
                     }
                 }
             }
         }
     }
 }
+
+return new TerraformPipeline()
