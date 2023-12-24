@@ -1,4 +1,4 @@
-package org.mygirukulam
+package org.mygurukulam
 
 class JavaPipeline {
     def static void main(String[] args) {
