@@ -1,4 +1,4 @@
-package org.mygirukulam
+package org.mygurukulam
 
 class MyFunctions {
     def static void sayHello() {
