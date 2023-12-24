@@ -1,6 +1,6 @@
 package org
 
-class TerraformPipeline {
+class Terraform {
     def gitCheckout = new GitCheckout()
 
     def runTerraformPipeline() {
@@ -16,4 +16,4 @@ class TerraformPipeline {
     }
 }
 
-return new TerraformPipeline()
+return new Terraform()
