@@ -1,5 +1,8 @@
 @Library('ot-shared-library') _
 
-import org.mygurukulam.TerraformPipeline
+def pipelineConfig = [
+    url: 'https://github.com/swapnilbamble1438/VotingApp.git',
+    appName: 'VotingApp'
+]
 
-TerraformPipeline.runTerraformPipeline()
+Terraform(pipelineConfig)

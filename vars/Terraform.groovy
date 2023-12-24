@@ -1,4 +1,4 @@
-def call(String url, String appName) {
+def call(Map config = [:]) {
     pipeline {
         tools {
             maven "MAVEN3"
@@ -11,7 +11,7 @@ def call(String url, String appName) {
                     script {
                         echo 'Hello world'
                         def z = new org.mygurukulam.Clone()
-                        z.checkOutFrom(url)
+                        z.checkOutFrom(config.url)
                     }
                 }
             }
@@ -20,7 +20,7 @@ def call(String url, String appName) {
                 steps {
                     script {
                         def z = new org.mygurukulam.MavenCompile()
-                        z.compile("${appName}/")
+                        z.compile("${config.appName}/")
                     }
                 }
             }
