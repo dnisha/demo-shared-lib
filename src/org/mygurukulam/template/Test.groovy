@@ -3,11 +3,10 @@ package org.mygurukulam.template
 import org.mygurukulam.common.*
 
 
-def call(Sting branch, Sting creds, Sting url) {
-    def gitCheckout = new org.mygurukulam.common.GitCheckout()
+def call(String url, String branch, String creds) {
 
-    def checkout = gitCheckout.checkout(branch, creds, url)
+    def gitCheckoutInstance = new org.mygurukulam.common.GitCheckout()
+
+    gitCheckoutInstance.call(repoUrl, branch, "deepak-creds")
 
 }
-
-return this
