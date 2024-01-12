@@ -7,6 +7,6 @@ def call(String url, String branch, String creds) {
 
     def gitCheckoutInstance = new org.mygurukulam.common.GitCheckout()
 
-    gitCheckoutInstance.call(repoUrl, branch, "deepak-creds")
+    gitCheckoutInstance.call(url, branch, "deepak-creds")
 
 }
