@@ -10,3 +10,5 @@ def GitCheckout(url, branch, creds) {
         }
     }     
 }
+
+return this

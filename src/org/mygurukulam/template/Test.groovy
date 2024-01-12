@@ -9,3 +9,5 @@ def call(Sting branch, Sting creds, Sting url) {
     def checkout = gitCheckout.checkout(branch, creds, url)
 
 }
+
+return this
