@@ -1,6 +1,6 @@
 package org.mygurukulam.common
 
-class GitCheckout {
+class GitCheckoutScript {
     def call(String url, String branch, String creds) {
         stage('Clone') {
             steps {
@@ -13,4 +13,4 @@ class GitCheckout {
     }     
 }
 
-return new GitCheckout()
+return new GitCheckoutScript()
